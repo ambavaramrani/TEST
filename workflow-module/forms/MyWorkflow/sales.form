@@ -1,0 +1,72 @@
+{
+    "id": "material",
+    "schemaVersion": "1.1.0",
+    "name": "material",
+    "revision": "draft",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "vbeln",
+            "type": "string",
+            "label": "VBELN",
+            "readOnly": false,
+            "value": "${context.Test.to.VBELN}",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "id": "vkorg",
+            "type": "string",
+            "label": "VKORG",
+            "readOnly": false,
+            "value": "${context.Test.to.VKORG}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "sprat",
+            "type": "string",
+            "label": "SPRAT",
+            "readOnly": false,
+            "value": "${context.Test.to.SPRAT}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "audat",
+            "type": "date",
+            "label": "AUDAT",
+            "readOnly": false,
+            "value": "${context.Test.to.AUDAT}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "vtweg",
+            "type": "string",
+            "label": "VTWEG",
+            "readOnly": false,
+            "value": "${context.Test.to.VTWEG}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
